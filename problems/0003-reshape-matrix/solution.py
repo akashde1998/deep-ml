@@ -12,5 +12,6 @@ def reshape_matrix(a, new_shape) -> torch.Tensor:
     
     if a_t.numel()!=new_shape[0]*new_shape[1]:
          return torch.tensor([])
-    a_s=torch.reshape(a_t, new_shape)
-    return a_s
+    else:
+       a_s=torch.reshape(a_t, new_shape)
+       return a_s
